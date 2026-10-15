@@ -11,6 +11,8 @@ EMCONMSP lets an MSP watch the health of every customer's VMware environment fro
 
 > This repository only holds documentation. The product is delivered as OVA appliances.
 
+![EMCONMSP Master dashboard](docs/images/master-dashboard.png)
+
 ---
 
 ## How it fits together
@@ -59,6 +61,8 @@ EMCONMSP lets an MSP watch the health of every customer's VMware environment fro
 3. Power on the VM and open `https://<master-address>` in a browser.
 4. Sign in. You are required to change the initial password before you can continue.
 
+<p align="center"><img src="docs/images/master-login.jpg" alt="Master sign-in" width="420"></p>
+
 ### 2. Deploy a Connector for each customer
 
 1. Deploy the **EMCONMSP Connector** OVA next to the customer's vCenter, with the same network fields as above.
@@ -66,11 +70,15 @@ EMCONMSP lets an MSP watch the health of every customer's VMware environment fro
 3. Activate the Connector with a one-time code from the Master (see below).
 4. Add the customer's vCenter.
 
+<p align="center"><img src="docs/images/connector-login.jpg" alt="Connector sign-in" width="420"></p>
+
 ---
 
 ## Using the Master
 
 ### Customers
+
+![Customers](docs/images/master-customers.png)
 
 **Customers > New customer** creates the customer record.
 
@@ -78,7 +86,9 @@ EMCONMSP lets an MSP watch the health of every customer's VMware environment fro
 - Optionally add the customer's email addresses and tick *send reports to this customer* so every new report is emailed to them as a PDF.
 - If ConnectWise is connected, you can pick the customer's company from a list instead of typing it.
 
-Open the customer to see its connectors, vCenters, latest reports, topology, health score and report history. **Generate code** (or **Re-issue code**) creates the one-time activation code you enter on the Connector. **Request report** asks a Connector to send a fresh report right away.
+Open the customer to see its connectors, vCenters, latest reports, topology, health score and report history. **Generate code** (or **Re-issue code**) creates the one-time activation code you enter on the Connector. **Request report** asks a Connector to send a fresh report right away. The header also shows at a glance whether report emails are on for the customer.
+
+![Customer detail](docs/images/master-customer-detail.png)
 
 ### Reports
 
@@ -88,6 +98,20 @@ Each report is a snapshot of one vCenter. A report contains:
 - **Inventory report** with hosts, clusters, networks, datastores, storage adapters, redundancy checks, licenses and certificates.
 - **VM health** with snapshots, VMware Tools, hot-add settings, outdated virtual hardware, zombie VMDKs and more.
 - **Trends** to compare the latest reports of a vCenter.
+
+![Report overview](docs/images/master-report-overview.png)
+
+Recommendations explain what is wrong and which objects are affected:
+
+![Recommendations](docs/images/master-recommendations.png)
+
+The inventory tab lists everything the Connector collected, with a short explanation under every section title:
+
+![Inventory report](docs/images/master-inventory.png)
+
+![Datastores](docs/images/master-datastores.png)
+
+![VM health](docs/images/master-vm-health.png)
 
 From a report you can download a **PDF** (the same file customers receive by email), the raw **JSON**, or an **Excel** inventory export.
 
@@ -105,6 +129,8 @@ From a report you can download a **PDF** (the same file customers receive by ema
 
 **Customer > Log Viewer** shows vCenter tasks and events collected every 15 minutes, with search, time ranges, state filters and an expandable row for details. Errors are highlighted.
 
+![Log viewer](docs/images/master-log-viewer.png)
+
 ### Fleet pages
 
 | Page | Purpose |
@@ -116,6 +142,10 @@ From a report you can download a **PDF** (the same file customers receive by ema
 | **vCenters** | Every monitored vCenter and whether it is in sync. Click a row for details. |
 | **Licenses** | Licenses per vCenter, most urgent first. Click a vCenter to see its licenses. |
 | **ConnectWise** | Read-only comparison of customer contracts against what is actually monitored. |
+
+![vCenters](docs/images/master-vcenters.png)
+
+![Licenses](docs/images/master-licenses.png)
 
 ### Settings
 
@@ -156,6 +186,8 @@ The ConnectWise integration only reads. Nothing is ever written back. Use an API
 ### Handy extras in the header
 
 - **Search box**: type to find customers, connectors, vCenters, reports and vCenter logs. Click it while empty for quick actions and page shortcuts. Use the arrow keys and Enter.
+
+![Quick actions](docs/images/master-search.png)
 - **Camera icon**: save a screenshot of the full screen or of a selected area as a PNG.
 - **Theme toggle** for light and dark mode.
 
@@ -171,11 +203,15 @@ The Connector has a small local web interface, reachable at its own address.
 2. On the first screen, enter the **Master server URL** and the **activation code** you generated on the customer page of the Master.
 3. The Connector shows *Active* and starts reporting.
 
+![Connector overview](docs/images/connector-overview.png)
+
 ### Add a vCenter
 
 Use **Add vCenter** and fill in the vCenter address, a service account and the role it holds. **Test connection** and **Save** both check that the account can really sign in and has the privileges the Connector needs, so mistakes are caught immediately.
 
 The service account only needs read access plus a few extra privileges. A **What role is needed?** button on the form lists the exact steps.
+
+<p align="center"><img src="docs/images/connector-add-vcenter.png" alt="Add vCenter" width="520"> <img src="docs/images/connector-role-help.png" alt="vCenter role help" width="520"></p>
 
 | Privilege | Used for |
 | --- | --- |
@@ -193,6 +229,8 @@ The overview shows the Connector state, the last and next synchronization, and e
 ### Settings
 
 The gear icon in the header offers **Change password**, **Network settings** (IP, DNS, NTP) and **Delete all reports**, which sends a deletion request that a super admin on the Master must approve.
+
+<p align="center"><img src="docs/images/connector-settings-menu.png" alt="Connector settings menu" width="420"></p>
 
 Sessions end after 15 minutes without activity.
 
