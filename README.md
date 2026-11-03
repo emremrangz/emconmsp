@@ -1,18 +1,19 @@
 <div align="center">
 
-# EMCONMSP
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/logo-dark.png">
+  <img src="docs/images/logo-light.png" alt="EMCONMSP" width="320">
+</picture>
 
 **VMware infrastructure monitoring and reporting platform for managed service providers**
 
-[![Master](https://img.shields.io/badge/Master-1.0.12-1f3a5f?style=flat-square)](#release-notes)
-[![Connector](https://img.shields.io/badge/Connector-1.0.5-1f3a5f?style=flat-square)](#release-notes)
 [![vSphere](https://img.shields.io/badge/VMware%20vSphere-7.x%20%7C%208.x-607078?style=flat-square)](#requirements)
 [![Delivery](https://img.shields.io/badge/delivery-OVA%20appliance-2b6cb0?style=flat-square)](#deployment)
 [![Network](https://img.shields.io/badge/closed%20network-ready-2f855a?style=flat-square)](#security)
 [![License](https://img.shields.io/badge/license-proprietary-4a5568?style=flat-square)](#license)
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-support-ffdd00?style=flat-square&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/jidmtzaqvt)
 
-[Overview](#overview) · [Capabilities](#capabilities) · [Architecture](#architecture) · [Deployment](#deployment) · [Security](#security) · [Release notes](#release-notes)
+[Overview](#overview) · [Capabilities](#capabilities) · [Architecture](#architecture) · [Deployment](#deployment) · [Security](#security)
 
 <img src="docs/images/master-dashboard.png" alt="EMCONMSP Master dashboard" width="900">
 
@@ -100,16 +101,6 @@ The Master is updated with release packages; Connectors receive their updates fr
 - Outbound-only communication over TLS.
 - Role-based access with MFA, AD integration and session timeouts.
 - Secrets at rest are encrypted. Designed for closed networks without internet access.
-
-## Release notes
-
-| Version | Highlights |
-| --- | --- |
-| **Master 1.0.12** | Report Volume chart fix when no failed reports exist. |
-| **Master 1.0.11** | Modern charts across Dashboard, Statistics and Report Summary, unified stat cards, collapsible VMs in Snap Manager, PDF layout fix for large environments. |
-| **Master 1.0.10** | Redesigned PDF with cover page and clickable contents, MSP logo and email name under Settings > Reports, VMware version and HBA redundancy sections. |
-| **Master 1.0.9** | Snap Manager rules by snapshot age and VM state, Log Viewer quick filters, Zabbix mail monitoring, user edit and password reset. |
-| **Connector 1.0.5** | Real event types for EventEx events, web server reliability fixes. |
 
 ## Support
 
