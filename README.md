@@ -104,6 +104,10 @@ The Master is updated with release packages; Connectors receive their updates fr
 - Role-based access with MFA, AD integration and session timeouts.
 - Secrets at rest are encrypted. Designed for closed networks without internet access.
 
+## Get the OVA
+
+This repository contains documentation only. The source code and the OVA appliances are not published here. To receive the Master and Connector OVAs, send an email to [marangozy@gmail.com](mailto:marangozy@gmail.com).
+
 ## Support
 
 If EMCONMSP is useful to you, you can support its development.
