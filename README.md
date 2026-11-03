@@ -80,6 +80,10 @@ EMCONMSP gives MSPs a single console for the health of every customer's VMware e
 
 ## Deployment
 
+<div align="center">
+<img src="docs/images/connector-deployment.png" alt="EMCONMSP Connector deployment steps" width="900">
+</div>
+
 1. **Master** - deploy the OVA, set IP, gateway, DNS and FQDN in *Customize template*, then sign in at `https://<master>` and change the initial password.
 2. **Customer** - on the Master, create the customer with the Appliance ID of its Connector to receive a one-time activation code.
 3. **Connector** - deploy the OVA at the customer site, enter the Master URL and activation code, and add the vCenter.
