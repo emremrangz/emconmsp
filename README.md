@@ -10,6 +10,7 @@
 [![Delivery](https://img.shields.io/badge/delivery-OVA%20appliance-2b6cb0?style=flat-square)](#deployment)
 [![Network](https://img.shields.io/badge/closed%20network-ready-2f855a?style=flat-square)](#security)
 [![License](https://img.shields.io/badge/license-proprietary-4a5568?style=flat-square)](#license)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-support-ffdd00?style=flat-square&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/jidmtzaqvt)
 
 [Overview](#overview) · [Capabilities](#capabilities) · [Architecture](#architecture) · [Deployment](#deployment) · [Security](#security) · [Release notes](#release-notes)
 
@@ -109,6 +110,10 @@ The Master is updated with release packages; Connectors receive their updates fr
 | **Master 1.0.10** | Redesigned PDF with cover page and clickable contents, MSP logo and email name under Settings > Reports, VMware version and HBA redundancy sections. |
 | **Master 1.0.9** | Snap Manager rules by snapshot age and VM state, Log Viewer quick filters, Zabbix mail monitoring, user edit and password reset. |
 | **Connector 1.0.5** | Real event types for EventEx events, web server reliability fixes. |
+
+## Support the project
+
+If EMCONMSP is useful to you, you can support its development on [Buy Me a Coffee](https://buymeacoffee.com/jidmtzaqvt).
 
 ## License
 
