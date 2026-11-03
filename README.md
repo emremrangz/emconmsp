@@ -111,9 +111,14 @@ The Master is updated with release packages; Connectors receive their updates fr
 | **Master 1.0.9** | Snap Manager rules by snapshot age and VM state, Log Viewer quick filters, Zabbix mail monitoring, user edit and password reset. |
 | **Connector 1.0.5** | Real event types for EventEx events, web server reliability fixes. |
 
-## Support the project
+## Support
 
-If EMCONMSP is useful to you, you can support its development on [Buy Me a Coffee](https://buymeacoffee.com/jidmtzaqvt).
+If EMCONMSP is useful to you, you can support its development.
+
+- Use it, share it and tell us what you would like to see next.
+- Sponsor the work at [buymeacoffee.com/jidmtzaqvt](https://buymeacoffee.com/jidmtzaqvt)
+
+<a href="https://buymeacoffee.com/jidmtzaqvt"><img src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slot=1&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" alt="Buy me a coffee" height="50"></a>
 
 ## License
 
