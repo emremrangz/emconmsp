@@ -15,7 +15,7 @@
 
 [Overview](#overview) · [Capabilities](#capabilities) · [Architecture](#architecture) · [Deployment](#deployment) · [Security](#security)
 
-<img src="docs/images/master-dashboard.png" alt="EMCONMSP Master dashboard" width="900">
+<img src="docs/images/master-dashboard-fleet.png" alt="EMCONMSP Master dashboard" width="900">
 
 </div>
 
@@ -43,7 +43,7 @@ EMCONMSP gives MSPs a single console for the health of every customer's VMware e
 <table>
   <tr>
     <td width="50%"><img src="docs/images/master-report-summary.png" alt="Report summary"></td>
-    <td width="50%"><img src="docs/images/master-statistics.png" alt="Fleet statistics"></td>
+    <td width="50%"><img src="docs/images/master-statistics-fleet.png" alt="Fleet statistics"></td>
   </tr>
   <tr>
     <td align="center"><sub>Report summary with component health</sub></td>
