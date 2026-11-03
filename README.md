@@ -114,7 +114,3 @@ If EMCONMSP is useful to you, you can support its development.
 ## License
 
 EMCONMSP is proprietary software. The license agreement is presented during OVA deployment and must be accepted before use.
-
-<div align="center">
-<sub>&copy; PilotHosts Software and Technology Limited Company · A <a href="https://www.pilothosts.com/">Pilothosts Tech</a> product</sub>
-</div>
