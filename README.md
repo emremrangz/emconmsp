@@ -1,9 +1,7 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/images/logo-dark.png">
-  <img src="docs/images/logo-light.png" alt="EMCONMSP" width="320">
-</picture>
+<img src="docs/images/logo-light.png#gh-light-mode-only" alt="EMCONMSP" width="320">
+<img src="docs/images/logo-dark.png#gh-dark-mode-only" alt="EMCONMSP" width="320">
 
 **VMware infrastructure monitoring and reporting platform for managed service providers**
 
